@@ -1,0 +1,11 @@
+<div class="p-5 mb-8 bg-dark rounded-3 text-light" id="<%= dom_id friend %>">
+  <div class="container-fluid py-5">
+    <h3 class="display-5 fw-bold"><%= friend.first_name %> <%= friend.last_name %></h3>
+    <p class="col-md-8 fs-5">Email : <%= friend.email %> | Phone : <%= friend.phone %> | Twitter Handle : <%= friend.twitter %></p>
+    </div>
+    <%= link_to "Edit this friend", edit_friend_path(@friend), class: "btn btn-secondary btn-sm my-3" %> <%= button_to "Destroy this friend", @friend, method: :delete, class: "btn btn-secondary btn-sm my-3" %>
+</div>
+
+
+
+
